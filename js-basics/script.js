@@ -83,6 +83,49 @@ console.log(mishmash[7]); //returns true
 console.log(typeof mishmash[7]); //returns boolean
 
 
+//Create an array of objects
+
+let fruits = [
+    {
+        kind: "grape",
+        color: "red",
+        quantity: 12,
+        tasty: true
+    }, 
+    {
+        kind: "kiwi",
+        color: "brown", 
+        quantity: 98,
+        tasty: true
+    },
+    {
+        kind: "banana",
+        color: "yellow",
+        quantity: 2,
+        tasty: false
+    },
+];
+
+//console log the array
+console.log(fruits);
+
+//return every value in the array by accessing specific properties
+console.log(fruits[0].kind); //returns grape
+console.log(fruits[0].color); //returns red
+console.log(fruits[0].quantity); //returns 12
+console.log(fruits[0].tasty); //returns true
+
+console.log(fruits[1].kind); //returns kiwi
+console.log(fruits[1].color); //returns brown
+console.log(fruits[1].quantity); //returns 98
+console.log(fruits[1].tasty); //returns true
+
+console.log(fruits[2].kind); //returns banana
+console.log(fruits[2].color); //returns yellow
+console.log(fruits[2].quantity); //returns 2
+console.log(fruits[2].tasty); //returns false
+
+
 
 //FUNCTIONS - statements that perform task/calculation
 //Parameter - variable (input) given at time of function declaration
