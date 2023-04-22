@@ -61,6 +61,28 @@ console.log(selectedColors[0]); //will show 1st element in array
 //Array is an object = has property-value pairs - can use dot notation to see properties
 console.log(selectedColors.length);
 
+//Can mix data types in an array
+let mishmash = [
+    1,
+    2,
+    3,
+    4.5,
+    5.6,
+    "oh boy",
+    "say it isn't so",
+    true
+];
+
+console.log(mishmash[2]); //returns 3
+console.log(typeof mishmash[2]); //returns number
+console.log(mishmash[4]); //returns 5.6
+console.log(typeof mishmash[4]); //returns number
+console.log(mishmash[6]); //returns say it isn't so
+console.log(typeof mishmash[6]); //retruns string
+console.log(mishmash[7]); //returns true
+console.log(typeof mishmash[7]); //returns boolean
+
+
 
 //FUNCTIONS - statements that perform task/calculation
 //Parameter - variable (input) given at time of function declaration
