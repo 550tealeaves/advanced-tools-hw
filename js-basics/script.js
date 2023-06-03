@@ -1,20 +1,20 @@
 //VARIABLE NAMING RULES
-//Can't be reserved keyword (if, var, const, let)
-//should be meaningful (no a, x5, tr2)
-//can't start w/ a number
-//no spaces or hyphens
-//case sensitive - use camelCase 
-//declare each variable on separate lines
+// (1) Can't be reserved keyword (if, var, const, let, return)
+// (2) Should be meaningful (no a, x5, tr2)
+// (3) Can't start w/ a number
+// (4) No spaces or hyphens
+// (5) Case sensitive - use camelCase 
+// (6) Declare each variable on separate lines
 
 let firstName = 'Mosh';
 let lastName = 'Hamedani';
 
 let interestRate = 0.3;
-interestRate = 1;
-console.log(interestRate); //let allows you to reassign variable
+interestRate = 1; 
+console.log(interestRate); //output = 1 "let" allows you to reassign variable
 
 const interestRate2 = 0.3;
-// interestRate2 = 1;
+// interestRate2 = 1 - already set
 console.log(interestRate2); //error b/c cannot reassign a constant
 
 
@@ -41,9 +41,9 @@ person.name = 'John'; //replaced Mosh w/ John
 person['name'] = 'Mary'; //replaces John w/ Mary
 
 
-console.log(person);
+console.log(person); //output = age: 30, name: 'Mary'
 
-console.log(person.name); 
+console.log(person.name); //Mary
 
 //ARRAYS - list of objects - ex: list of colors, list of groceries
 // [] = array literal 
@@ -55,11 +55,11 @@ let selectedColors = [
 selectedColors[2] = 'green'; //this will add a 3rd element to the array (position 2)
 selectedColors[3] = 1; //adds 4th element to array (position 3) - can mix data types
 
-console.log(selectedColors);
+console.log(selectedColors); //output - 0: 'red' 1: "blue" 2: "green" 3: 1
 console.log(selectedColors[0]); //will show 1st element in array
 
 //Array is an object = has property-value pairs - can use dot notation to see properties
-console.log(selectedColors.length);
+console.log(selectedColors.length); // output = 4
 
 //Can mix data types in an array
 let mishmash = [
@@ -78,7 +78,7 @@ console.log(typeof mishmash[2]); //returns number
 console.log(mishmash[4]); //returns 5.6
 console.log(typeof mishmash[4]); //returns number
 console.log(mishmash[6]); //returns say it isn't so
-console.log(typeof mishmash[6]); //retruns string
+console.log(typeof mishmash[6]); //returns string
 console.log(mishmash[7]); //returns true
 console.log(typeof mishmash[7]); //returns boolean
 
@@ -152,7 +152,7 @@ greet('Mary', 'Thompson');
 
 //TYPES OF FUNCTIONS
 
-//Calcuating task function
+//Calculating task function
 function square(number){
     return number * number;
 }
@@ -160,9 +160,9 @@ function square(number){
 //2 = ARGUMENT passed into the number parameter for function square
 //You can then set that value of square(2) to another variable 
 let squaredNumber = square(2);
-console.log(squaredNumber);
+console.log(squaredNumber); //output = 4
 
 // you also can declare the variable within the console log instead of calling it separately 
 
-console.log(square(2)); //it calls function square, passing in argument of 2, and then displaying result in the console 
+console.log(square(2)); //returns 4 - it calls function square, passing in argument of 2, and then displaying result in the console 
 //there are 2 function calls here - square(2); & console.log();
