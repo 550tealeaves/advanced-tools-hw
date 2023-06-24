@@ -160,7 +160,7 @@ console.log("mapDate", peopleLocationsDate);
 
 
 
-//FUNCTIONS - statements that perform task/calculation
+//FUNCTIONS - statements that perform task/calculation or return something
 //Parameter - variable (input) given at time of function declaration
 //Argument - value supplied to the parameter
 
@@ -177,6 +177,17 @@ greet('John', 'Smith');
 //Mary = ARGUMENT for name parameter
 //Thompson = ARGUMENT for lastName parameter
 greet('Mary', 'Thompson');  
+
+
+//Another way to write functions with parameters
+salutation = (myFirstName, myLastName) => {
+    return `My first name is ${myFirstName}, and my last name is ${myLastName}.`
+
+}
+
+console.log(salutation);
+salutation('Gordon', 'Marshall');
+
 
 
 //functions w/ multiple parameters - can add more inputs
@@ -199,3 +210,18 @@ console.log(squaredNumber); //output = 4
 
 console.log(square(2)); //returns 4 - it calls function square, passing in argument of 2, and then displaying result in the console 
 //there are 2 function calls here - square(2); & console.log();
+
+//this function performs an action - it sends an email to the email w/ a subject and text when called
+function sendEmail(emailAddress, subject, text){
+    window.open(`mailto:${emailAddress}?subject=${subject}&body=${text}`);
+}
+
+//sendEmail(); //will open email app and send undefined subject and text
+
+
+// LOOPS
+//instructions that repeat until a condition is met
+
+// Use FOR loops when # of iterations is KNOWN
+// Use WHILE loops when # of iterations is UNKNOWN
+
