@@ -126,6 +126,39 @@ console.log(fruits[2].quantity); //returns 2
 console.log(fruits[2].tasty); //returns false
 
 
+//Array.filter() and arraay.map()
+//Each variable type has own unique set of methods and abilities 
+// [1, 2, 3, 4, 5].filter(d => d <= 2) //will return 1,2
+//[1, 2, 3, 4, 5].filter(d => d > 1) //will return 2,3,4,5
+
+peopleLocations = [
+    { name: 'Paul', city: 'Denver' },
+    { name: 'Robert', city: 'Denver' },
+    { name: 'Ian', city: 'Boston' },
+    { name: 'Cobus', city: 'Boston' },
+    { name: 'Ayodele', city: 'New York' },
+    { name: 'Mike', city: 'New York' },
+]
+
+console.log("pplPlaces", peopleLocations);
+
+peopleLocations.filter(d => d.city != 'Denver')// filters and removes all objects with city Denver
+console.log("filter", peopleLocations.filter);
+
+// peopleLocations.filter(d => d.city = 'Denver')//filters and shows objects w/ city Denver
+// console.log("ppl locations", peopleLocations.filter); 
+
+//Array.map() - method for array that create a new array, populated with whatever results you specify.
+peopleLocationsArray = peopleLocations.map(d => d.city) // will show only the cities for peopleLocations array - Denver, Boston, New York
+console.log("mapCity", peopleLocationsArray); //results impacted by 2nd array.filter() - if active, results will only be Denver
+
+peopleLocationsArray = peopleLocations.map(d => d.name) // will show only the names for peopleLocations array - Paul, Robert, Ian, Cobus, Ayodele, Mike
+console.log("mapName", peopleLocationsArray);
+
+peopleLocationsDate = peopleLocations.map(d => ({ ...d, date: new Date() })) //use {...} notation to copy all values of original array and to ADD NEW VALUES 
+console.log("mapDate", peopleLocationsDate);
+
+
 
 //FUNCTIONS - statements that perform task/calculation
 //Parameter - variable (input) given at time of function declaration
