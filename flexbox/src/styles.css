@@ -1,0 +1,85 @@
+body {
+    font-family: sans-serif;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 900;
+    margin: 0;
+    font-size: 34px;
+    line-height: 48px;
+}
+
+h1 h2,
+h3 {
+    color: #231d3c;
+}
+
+.logo {
+    display: block;
+    margin: 30px auto;
+    width: 150px;
+}
+
+/*Could also group the same classes when giving them the same styling*/
+
+/* .challenge-1,.challenge-2,.challenge-3,.challenge-4{
+    display: flex;
+} */
+
+
+/*HORIZONTALLY LISTS THE DIVS*/
+.challenge-1 {
+    display: flex;
+}
+
+
+/*HORIZONTALLY LISTS THE DIVS & MAKES THEM RIGHT-ALIGNED*/
+.challenge-2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/*HORIZONTALLY LISTS THE DIVS & SPACES THEM OUT EVENLY ACROSS THE ROW*/
+.challenge-3 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*HORIZONTALLY LISTS THE DIVS*/
+.challenge-4 {
+    display: flex;
+}
+
+/*ADDS BORDERS AROUND THE DIVS W/ BELOW CHARACTERISTICS*/
+.challenges {
+    border: 3px solid black;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+/*STYLE THE TEXT*/
+.blue,.red,.green{
+    color: white;
+    font-weight: bold;
+}
+
+
+/*CHANGE THE BACKGROUND COLOR OF THE BORDER*/
+.blue{
+    background:  blue;
+
+}
+
+.red{
+    background: red;
+
+}
+
+.green{
+    background: green;
+
+}
