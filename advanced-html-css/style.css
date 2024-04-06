@@ -1,0 +1,50 @@
+:root {
+    --primary-color: #6c63ff;
+    --secondary-color: #f5f2fe;
+    --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    text-align: center;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+button {
+    padding: 20px;
+    justify-content: space-evenly;
+    margin: 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+a {
+    text-decoration: none;
+}
+
+.contact-button {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.contact-button a {
+    color: var(--secondary-color);
+}
+
+.about-button {
+    background-color: white;
+}
+
+.about-button a {
+    color: var(--primary-color);
+}
