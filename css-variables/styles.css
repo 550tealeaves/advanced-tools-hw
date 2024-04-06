@@ -1,0 +1,40 @@
+/*:root is used when you want to use the same styling multiple times so you don't have to re-type each time - create a variable that replaces all the granular details*/
+
+:root {
+    --primary-color: #58f23a;
+    --header-color: #46094f;
+    --border: 5px dashed rgb(209, 89, 89);
+    --font-style: "Times New Roman", Times, serif;
+    --gradient: linear-gradient(-225deg, #2cd8d5 0%, #c5c1ff 26%, #ffbac3 100%);
+}
+
+body {
+    font-family: sans-serif;
+    padding: 0 20px;
+    background: var(--gradient); /*root used*/
+}
+
+h1 {
+    text-align: center;
+    font-weight: 900;
+    margin: 0;
+    font-size: 34px;
+    line-height: 48px;
+    color: var(--primary-color); /*root used*/
+}
+
+h1 h2,
+h3 {
+    color: var(--header-color); /*root used*/
+}
+
+p {
+    font-family: var(--font-style); /*root used*/
+    border: var(--border); /*root used*/
+}
+
+.logo {
+    display: block;
+    margin: 30px auto;
+    width: 150px;
+}
