@@ -4,6 +4,53 @@ p{
 }
 
 
+.intro{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: cornflowerblue;
+  color: bisque;
+  border: 4px, dotted, crimson;
+  border-radius: 6px;
+}
+
+/*styles the strong element w/in a p element*/
+p strong{
+  color: rgb(234, 150, 120);
+  background-color: midnightblue;
+  text-decoration: underline dashed;
+
+}
+
+
+#navbar {
+  padding: 80px;
+  background-color: red;
+  color: white;
+}
+
+.football {
+  font-family: arial;
+  background-color: lightgrey;
+  color: blue;
+}
+
+.baseball {
+  font-weight: bold;
+  color: green;
+}
+
+.american {
+  background-color: yellow;
+}
+
+#mets{
+  color: rgb(100, 0, 62);
+}
+
+
+
+
+
+
 table {
     border-collapse: collapse;
     border: 2px solid rgb(140 140 140);
